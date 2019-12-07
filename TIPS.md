@@ -105,4 +105,16 @@
 
 30. Criar um addHook no Model User para pegar o password em modo virtual e transformar em hash
 
-31.
+### Gerando dados aleatórios
+
+31. Até então criamos dados do usuário de forma direta, vamos melhorar e automatizar esse processo
+    através de alguns geradores de dados aleatórios, para isso:
+    `yarn add factory-girl faker -D`
+
+32. Também cria-se o server/\_\_tests\_\_/factories.js onde colocaremos nosso gerador
+
+33. Codifica a função factory com name, email e password
+
+34. Importar e substituir o User.create() pelo factory.create()
+
+35. Aplicar o factory.attrs() para os demais testes
